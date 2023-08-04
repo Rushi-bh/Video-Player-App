@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_item_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/folder_image"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/folder_icon"
+        android:tint="@color/cool_blue"
+        android:contentDescription="@string/image"
+        app:shapeAppearanceOverlay="@style/curved"
+
+        />
+
+        <TextView
+            android:id="@+id/FolderName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="@string/folder_name"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            />
+
+    <ImageView
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:src="@drawable/empty_check_box"
+        android:visibility="gone" />
+
+
+
+
+
+</LinearLayout>
